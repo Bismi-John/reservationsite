@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css\style.css" />
+    <body>
+        <div class="container-sm">
+            <div class="center">
+                <h2 class="text-center">TRAVEL RESERVATION FORM</h2>
+                <p class="text-center fw-bold text-danger">
+                    * denotes mandatory
+                </p>
+                <br />
+                <form
+                    action="welcome.html"
+                    class="bg-color"
+                    onsubmit="return validate()
+                        "
+                >
+                    <div class="flex">
+                        <div class="bdr star">
+                            <label for="Full name:">Full name:</label>
+                        </div>
+                        <div>
+                            <input
+                                type="name"
+                                placeholder="FirstName"
+                                id="na"
+                                name="fname"
+                            />
+                            <input
+                                type="name"
+                                placeholder="LastName"
+                                id="na"
+                                name="lname"
+                            />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="flex">
+                        <div class="bdr star">
+                            <label for="Email:">Email:</label>
+                        </div>
+                        <div>
+                            <input type="text" id="em" />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="flex">
+                        <div class="bdr star">
+                            <label for="Select Tour Package:"
+                                >Select Tour Package:</label
+                            >
+                        </div>
+                        <div>
+                            <select name="places" id="pls">
+                                <option value=""></option>
+                                <option value="goa">goa</option>
+                                <option value="delhi">delhi</option>
+                                <option value="manali">manali</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="flex">
+                        <div class="bdr star">
+                            <label for="Arrival date:">Arrival date:</label>
+                        </div>
+                        <div><input type="text" id="dt" /></div>
+                    </div>
+                    <br />
+                    <div class="flex">
+                        <div class="bdr star">
+                            <label for="Number of persons:"
+                                >Number of persons:</label
+                            >
+                        </div>
+                        <div><input type="text" id="per" /></div>
+                    </div>
+                    <br />
+
+                    <div class="flex">
+                        <div class="bdr star">
+                            <label for="What would you want to avail:"
+                                >What would you want to avail:</label
+                            >
+                        </div>
+
+                        <div>
+                            <label>Boarding</label>
+                            <input type="checkbox" id="ch1" /><br />
+
+                            <label>Fooding</label>
+
+                            <input type="checkbox" id="ch2" /><br />
+                            <label>Sight seeing</label>
+                            <input type="checkbox" id="ch3" />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="flex">
+                        <div class="bdr">
+                            <label>Discount Coupon code:</label>
+                        </div>
+                        <div><input type="text" id="cpn" /></div>
+                    </div>
+                    <br />
+
+                    <div class="flex">
+                        <div class="bdr star">
+                            <label for="Terms and conditions:"
+                                >Terms and conditions:</label
+                            >
+                        </div>
+                        <div>
+                            <label for="radio1">I agree</label>
+                            <input type="radio" name="agree" id="radio" />
+
+                            <label for="radio2">I disagree</label>
+                            <input type="radio" name="agree" id="radio" />
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="text-center">
+                        <button class="button btn btn-outline-primary">
+                            Complete Reservation
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- custom CDN -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="JS/script.js"></script>
+    </body>
+</html>
